@@ -19,7 +19,6 @@ public class Computer {
         numbersService = new NumbersService();
         computerNumbers = new ComputerNumbers(getIntegers());
 
-        System.out.println("computerNumbers = " + computerNumbers);
 
     }
 

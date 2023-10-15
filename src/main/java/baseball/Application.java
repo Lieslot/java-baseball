@@ -3,6 +3,7 @@ package baseball;
 import baseball.client.Player;
 import baseball.domain.BallCount;
 import baseball.domain.Number;
+import baseball.exception.input.RetryFormatException;
 import baseball.view.InputView;
 import baseball.view.OutputView;
 
@@ -26,7 +27,6 @@ public class Application {
 
         while (true) {
 
-
             player.selectNumbers();
             BallCount ballCount = player.getBallCount();
             if (isEnd(ballCount.showStrike())) {
@@ -37,12 +37,15 @@ public class Application {
     }
 
     private static boolean isRetry() {
+
         String input = InputView.inputRetry();
         if (input.equals("1")) {
             return true;
         }
-
-        return false;
+        if (input.equals("2")) {
+            return false;
+        }
+        throw new RetryFormatException();
     }
     private static boolean isEnd(int strike) {
         return strike == COUNT.showValue();
