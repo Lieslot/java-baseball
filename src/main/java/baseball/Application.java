@@ -16,7 +16,7 @@ public class Application {
         while (true) {
             Player player = new Player();
             start(player);
-            if (!isRetry()) {
+            if (!player.retry()) {
                 break;
             }
         }
@@ -36,17 +36,7 @@ public class Application {
         }
     }
 
-    private static boolean isRetry() {
 
-        String input = InputView.inputRetry();
-        if (input.equals("1")) {
-            return true;
-        }
-        if (input.equals("2")) {
-            return false;
-        }
-        throw new RetryFormatException();
-    }
     private static boolean isEnd(int strike) {
         return strike == COUNT.showValue();
     }
