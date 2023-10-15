@@ -11,31 +11,32 @@ public class BallCount {
 
     public BallCount(PlayerNumbers playerNumbers, ComputerNumbers computerNumbers) {
         ballCount = new HashMap<>();
-        ballCount.put("strike", countStrike(playerNumbers.showNumbers(), computerNumbers.showNumbers()));
-        ballCount.put("ball", countBall(playerNumbers.showNumbers(), computerNumbers.showNumbers()));
+        ballCount.put("strike", countStrike(playerNumbers, computerNumbers));
+        ballCount.put("ball", countBall(playerNumbers, computerNumbers));
 
     }
 
-    private int countStrike(List<Number> playerNumbers, List<Number> computerNumbers) {
+    private int countStrike(PlayerNumbers playerNumbers, ComputerNumbers computerNumbers) {
 
         int strike = 0;
         for (int index = 0; index < 3; index++) {
-            Number playerNumber = playerNumbers.get(index);
-            Number computerNumber = computerNumbers.get(index);
-            if (computerNumber.equals(playerNumber)) {
+            int playerNumber = playerNumbers.showNumberAt(index);
+            int computerNumber = computerNumbers.showNumberAt(index);
+
+            if (playerNumber == computerNumber) {
                 strike++;
             }
         }
         return strike;
     }
 
-    private int countBall(List<Number> playerNumbers, List<Number> computerNumbers){
+    private int countBall(PlayerNumbers playerNumbers, ComputerNumbers computerNumbers){
         int ball = 0;
         for (int index = 0; index < 3; index++) {
-            Number playerNumber = playerNumbers.get(index);
-            Number computerNumber = computerNumbers.get(index);
+            int playerNumber = playerNumbers.showNumberAt(index);
+            int computerNumber = computerNumbers.showNumberAt(index);
 
-            if (!computerNumber.equals(playerNumber) && computerNumbers.contains(playerNumber)) {
+            if (playerNumber != computerNumber && computerNumbers.contains(playerNumber)) {
                 ball++;
             }
         }

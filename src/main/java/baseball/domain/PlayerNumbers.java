@@ -42,8 +42,9 @@ public class PlayerNumbers {
 
     }
 
-    public List<Number> showNumbers() {
-        return Collections.unmodifiableList(numbers);
+    public int showNumberAt(int index) {
+        Number number = numbers.get(index);
+        return number.showValue();
     }
 
 }

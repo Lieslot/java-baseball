@@ -15,7 +15,7 @@ public class Application {
 
         while (true) {
             Player player = new Player();
-            start(player);
+            gameStart(player);
             if (!player.retry()) {
                 break;
             }
@@ -23,7 +23,7 @@ public class Application {
 
 
     }
-    private static void start(Player player) {
+    private static void gameStart(Player player) {
 
         while (true) {
 

@@ -24,8 +24,9 @@ public class ComputerNumbers {
 
     }
 
-    public List<Number> showNumbers() {
-        return Collections.unmodifiableList(numbers);
+    public int showNumberAt(int index) {
+        Number number = numbers.get(index);
+        return number.showValue();
     }
 
     @Override
@@ -36,5 +37,10 @@ public class ComputerNumbers {
                 .collect(Collectors.toList());
 
         return integers.toString();
+    }
+
+    public boolean contains(int numberInt) {
+        Number number = new Number(numberInt);
+        return numbers.contains(number);
     }
 }
