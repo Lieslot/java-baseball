@@ -12,7 +12,7 @@
                 플레이어게서 입력한 숫자들을 받아 자신의 숫자와 비교하여 BallCount를 반환
 
 ## view
-    1.InputView: Player의 요청으로 입력을 받아 플레이어에게 전달
+    1.InputView: Player의 요청에 대한 ui로 입력을 받아 플레이어에게 전달
     2.OutputView: 플레이어에게서 받은 볼카운트를 출력
 
 ## domain
