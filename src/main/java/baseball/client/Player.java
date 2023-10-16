@@ -9,7 +9,7 @@ import baseball.utils.Utils;
 import baseball.view.InputView;
 import baseball.view.OutputView;
 
-public class Player {
+public class Player extends OutputView {
 
     private Computer computer;
     private PlayerNumbers playerNumbers;

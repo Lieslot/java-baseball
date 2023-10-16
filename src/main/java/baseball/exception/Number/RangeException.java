@@ -1,6 +1,6 @@
 package baseball.exception.Number;
 
-import static baseball.NumbersEnum.*;
+import static baseball.enums.NumbersEnum.*;
 
 public class RangeException extends IllegalArgumentException{
 

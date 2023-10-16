@@ -2,7 +2,7 @@ package baseball.domain;
 
 import baseball.exception.Number.RangeException;
 
-import static baseball.NumbersEnum.*;
+import static baseball.enums.NumbersEnum.*;
 
 public class Number {
 

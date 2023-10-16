@@ -1,17 +1,11 @@
 package baseball.domain;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import baseball.NumbersEnum;
-import camp.nextstep.edu.missionutils.Randoms;
+import baseball.exception.Numbers.DuplicationException;
 
-
-import static baseball.NumbersEnum.*;
-
-public class ComputerNumbers {
+public class ComputerNumbers extends DuplicationException {
 
     private final List<Number> numbers;
 

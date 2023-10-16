@@ -1,16 +1,12 @@
 package baseball.domain;
 
-import baseball.NumbersEnum;
 import baseball.exception.Numbers.DuplicationException;
 import baseball.exception.Numbers.WrongSizeException;
-import net.bytebuddy.implementation.bytecode.Duplication;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static baseball.NumbersEnum.*;
+import static baseball.enums.NumbersEnum.*;
 
 public class PlayerNumbers {
 

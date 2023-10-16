@@ -2,12 +2,9 @@ package baseball;
 
 import baseball.client.Player;
 import baseball.domain.BallCount;
-import baseball.domain.Number;
-import baseball.exception.input.RetryFormatException;
-import baseball.view.InputView;
 import baseball.view.OutputView;
 
-import static baseball.NumbersEnum.COUNT;
+import static baseball.enums.NumbersEnum.COUNT;
 
 public class Application {
     public static void main(String[] args) {

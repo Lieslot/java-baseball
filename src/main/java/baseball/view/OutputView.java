@@ -1,11 +1,8 @@
 package baseball.view;
 
-import baseball.NumbersEnum;
-import baseball.domain.BallCount;
-
 import java.util.Map;
 
-import static baseball.NumbersEnum.*;
+import static baseball.enums.NumbersEnum.*;
 
 public class OutputView {
 
