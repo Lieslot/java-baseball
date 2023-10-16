@@ -1,5 +1,5 @@
 
-![NumbersEnum.png](..%2F..%2F..%2F..%2FNumbersEnum.png)
+![NumbersEnum.png](https://imgur.com/a/dtFE8CP)
 
 
 # 대략적인 설명
