@@ -1,5 +1,6 @@
 package baseball.view;
 import baseball.exception.input.FormatException;
+import baseball.utils.Utils;
 import camp.nextstep.edu.missionutils.Console;
 
 public class InputView {
@@ -9,7 +10,7 @@ public class InputView {
         System.out.print("숫자를 입력해주세요 : ");
         String input = Console.readLine();
 
-        checkNumeric(input);
+        Utils.checkNumeric(input);
         return input;
     }
     public static String inputRetry() {
@@ -17,11 +18,6 @@ public class InputView {
         return Console.readLine();
     }
 
-    private static void checkNumeric(String input) {
-        boolean isNumeric = input.chars().allMatch(Character::isDigit);
-        if (!isNumeric) {{
-            throw new FormatException();
-        }}
-    }
+
 
 }
