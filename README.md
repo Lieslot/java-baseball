@@ -1,5 +1,5 @@
 
-![NumbersEnum.png](https://imgur.com/a/dtFE8CP)
+![NumbersEnum.png](https://i.imgur.com/7zaUCzD.png)
 
 
 # 대략적인 설명
@@ -8,7 +8,7 @@
     1.Player: 사용자가 하는 활동을 수행하는 객체(숫자 입력, 재시작 여부 체크 등)
 
 ## controller
-### Computer: 상대방에 해당하는 객체. 플레이어게서 입력한 번호를 받아 자신의 숫자와 비교하여 BallCount를 반환
+    1. Computer: 상대방에 해당하는 객체. 자신의 숫자들을 랜덤을 생성하고 플레이어게서 입력한 번호를 받아 자신의 숫자와 비교하여 BallCount를 반환
 
 ## view
     1.InputView: Player의 요청으로 입력을 받아 플레이어에게 전달
