@@ -27,11 +27,11 @@
     2.RetryFormatException: retry시 1이나 2 이외의 다른 입력이 들어왔을 경우 발생하는 에러
 
 ### Number
-    1.RangeException: 숫자가 1에서 9 사이일 경우 발생하는 에러
+    1.RangeException: 숫자가 1 미만 9 초과일 경우 발생하는 에러
 
 ### Numbers
     1.DuplicationException: PlayerNumbers에 중복된 숫자가 있을 경우 발생하는 에러
-    2.WrongSizeException: PlayerNumbers가 3이 아닌 경우 발생하는 에러
+    2.WrongSizeException: PlayerNumbers의 길이가 3이 아닌 경우 발생하는 에러
 
 ## enums
     1. NumberEnum: 코드 전반에서 사용되는 상수를 모아두는 곳
